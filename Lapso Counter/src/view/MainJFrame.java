@@ -42,6 +42,7 @@ public class MainJFrame extends javax.swing.JFrame
         WelcomeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         WelcomeLabel.setText("Welcome to 2017 Unesp Bright River AI Lapso Counter");
 
+        LapsoButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         LapsoButton.setText("Lapso");
         LapsoButton.addActionListener(new java.awt.event.ActionListener()
         {
@@ -51,6 +52,7 @@ public class MainJFrame extends javax.swing.JFrame
             }
         });
 
+        LapsosNoLabel.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         LapsosNoLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LapsosNoLabel.setText("Lapsos:");
 
@@ -76,11 +78,11 @@ public class MainJFrame extends javax.swing.JFrame
                         .addGap(76, 76, 76)
                         .addComponent(LapsosNoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(MainPanelLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
+                .addGap(140, 140, 140)
                 .addComponent(LapsoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -88,13 +90,13 @@ public class MainJFrame extends javax.swing.JFrame
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addComponent(WelcomeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addGap(34, 34, 34)
                 .addComponent(LapsoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(29, 29, 29)
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LapsosNoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 94, Short.MAX_VALUE))
+                    .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 22, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
