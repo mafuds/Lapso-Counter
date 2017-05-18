@@ -1,2 +1,3 @@
 Store data in files. Generate logs.
 Show statistics
+Register something funny that was said
