@@ -37,13 +37,13 @@ public class MainJFrame extends javax.swing.JFrame
         NoLapsosField = new javax.swing.JTextField();
         MemeLabel = new javax.swing.JLabel();
         MemeField = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        SubmitMemeButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         WelcomeLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         WelcomeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        WelcomeLabel.setText("Welcome to 2017 Unesp Bright River AI Lapso Counter");
+        WelcomeLabel.setText("Welcome to 2017 UNESP Light River AI's Lapso Counter");
 
         LapsoButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         LapsoButton.setText("Lapso");
@@ -59,7 +59,6 @@ public class MainJFrame extends javax.swing.JFrame
         LapsosNoLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LapsosNoLabel.setText("Lapsos:");
 
-        NoLapsosField.setText("jTextField1");
         NoLapsosField.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -72,47 +71,42 @@ public class MainJFrame extends javax.swing.JFrame
         MemeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MemeLabel.setText("Meme:");
 
-        MemeField.setText("jTextField1");
-
-        jButton1.setText("Submit");
+        SubmitMemeButton.setText("Submit");
 
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
         MainPanelLayout.setHorizontalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainPanelLayout.createSequentialGroup()
-                .addGap(140, 140, 140)
-                .addComponent(LapsoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MainPanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(WelcomeLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainPanelLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SubmitMemeButton))
                     .addGroup(MainPanelLayout.createSequentialGroup()
                         .addGap(76, 76, 76)
                         .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LapsosNoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MemeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(MemeField)
                             .addGroup(MainPanelLayout.createSequentialGroup()
-                                .addComponent(LapsosNoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(MainPanelLayout.createSequentialGroup()
-                                .addComponent(MemeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(MemeField))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainPanelLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                                .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(LapsoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainPanelLayout.createSequentialGroup()
                 .addComponent(WelcomeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addGap(36, 36, 36)
                 .addComponent(LapsoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addGap(27, 27, 27)
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LapsosNoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(NoLapsosField, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -121,7 +115,7 @@ public class MainJFrame extends javax.swing.JFrame
                     .addComponent(MemeLabel)
                     .addComponent(MemeField, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(SubmitMemeButton)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -194,7 +188,15 @@ public class MainJFrame extends javax.swing.JFrame
         {
             public void run()
             {
-                new MainJFrame().setVisible(true);
+                   try
+                   {
+                       Thread.sleep(3000);
+                   }
+                   catch(Exception e)
+                   {
+
+                   }
+                   new MainJFrame().setVisible(true);
             }
         });
     }
@@ -206,7 +208,7 @@ public class MainJFrame extends javax.swing.JFrame
     private javax.swing.JTextField MemeField;
     private javax.swing.JLabel MemeLabel;
     private javax.swing.JTextField NoLapsosField;
+    private javax.swing.JButton SubmitMemeButton;
     private javax.swing.JLabel WelcomeLabel;
-    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
